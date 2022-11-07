@@ -1,0 +1,66 @@
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400&display=swap');
+@import 'colors';
+// @import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/functions';
+
+$body-bg: $background;
+$body-color: $text;
+
+$btn-color: $background;
+
+// Navbar
+$navbar-dark-brand-color: $text;
+$navbar-light-brand-hover-color: $text;
+$navbar-light-color: $main;
+
+// Modal
+// $modal-content-bg: $background;
+// $modal-content-border-color: tint-color($background, 10%);
+// $modal-header-border-color: tint-color($background, 10%);
+// $modal-footer-border-color: tint-color($background, 10%);
+
+// Button
+$btn-font-weight: 400;
+
+// Input
+// $input-color: $text;
+// $input-bg: tint-color($background, 30%);
+// $input-border-color: $input-bg;
+// $input-focus-bg: $input-bg;
+// $input-focus-color: $input-color;
+// $input-focus-border-color: $input-bg;
+
+// Radio button
+// $form-check-radio-border-radius: 5px;
+
+// Card
+// $card-bg: shade-color($background, 5%);
+
+// Container
+// $container-max-widths: (
+//   xxl: 1140px
+// );
+
+// Headings
+$headings-font-weight: 900;
+
+// Fonts
+$font-weight-base: 400;
+$main-font: 'Inter';
+$font-family-sans-serif: $main-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+@import '~bootstrap/scss/bootstrap';
+
+// @import '~bootstrap/scss/variables';
+// @import '~bootstrap/scss/maps';
+// @import '~bootstrap/scss/mixins';
+// @import '~bootstrap/scss/root';
+
+// // @import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/reboot";
+// // @import "~bootstrap/scss/type";
+// // @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/containers";
+// @import "~bootstrap/scss/grid";
+// // @import "~bootstrap/scss/helpers";

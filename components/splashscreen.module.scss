@@ -1,0 +1,22 @@
+@import '../styles/colors.scss';
+
+.container {
+    position: relative;
+    height: 30rem;
+    min-height: 10rem;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.header {
+    position: relative;
+    height: inherit;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: $main;
+    text-transform: uppercase;
+    font-style: normal;
+}

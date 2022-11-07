@@ -1,0 +1,32 @@
+@import '../styles/colors.scss';
+
+.main {
+    background-color: shade-color($complementary, 60);
+}
+
+.parent {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.imageContainer {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    min-height: 20rem;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.textBox {
+    background-color: $background;
+    padding: 5rem;
+}
+
+@media (max-width: 768px) {
+    .textBox {
+        padding: 10vw;
+    }
+}

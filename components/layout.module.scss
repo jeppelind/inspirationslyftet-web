@@ -1,0 +1,25 @@
+.main {
+    min-height: 100vh;
+    // padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+.main2 {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main3 {
+    min-height: 100vh;
+    // padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+}
