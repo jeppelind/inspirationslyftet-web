@@ -1,7 +1,7 @@
 @import '../styles/colors.scss';
 
 .main {
-    background-color: shade-color($complementary, 60);
+    background-color: $complementary;
 }
 
 .parent {

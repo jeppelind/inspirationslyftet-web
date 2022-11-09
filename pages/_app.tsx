@@ -1,6 +1,6 @@
-import '../styles/globals.scss'
 import { Inter, Lora, Playfair_Display } from '@next/font/google';
 import '../styles/custom.scss';
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 
 const inter = Inter({ subsets: ['latin'] });

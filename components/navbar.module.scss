@@ -3,4 +3,5 @@
 .navbar {
     background-color: $white;
     min-height: 100px;
+    filter: drop-shadow(0 0 2px rgba(176, 176, 176, 0.4));
 }

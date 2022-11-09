@@ -1,4 +1,4 @@
-import styles from './about.module.scss';
+import styles from './cards.module.scss';
 
 type CardProps = {
     label: string,
@@ -21,9 +21,11 @@ const cardInfo = [
 ]
 
 const Card = ({ label, text }: CardProps) => (
-    <div className={`col-lg`}>
-        <h5 className='subheader'>{label}</h5>
-        <p>{text}</p>
+    <div className={`col-lg ${styles.column}`}>
+        <div className={styles.card}>
+            <h6 className='subheader'>{label}</h6>
+            <p>{text}</p>
+        </div>
     </div>
 )
 
