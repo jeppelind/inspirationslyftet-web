@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './layout.module.scss';
 import Footer from './footer';
 import { ReactNode } from 'react';

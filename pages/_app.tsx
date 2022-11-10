@@ -4,7 +4,6 @@ import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 
 const inter = Inter({ subsets: ['latin'] });
-// const lora = Lora({ subsets: ['latin'], style: 'italic' });
 const playfairItalic = Playfair_Display({ subsets: ['latin'], style: 'italic' });
 const playfair = Playfair_Display({ subsets: ['latin'] });
 
@@ -12,7 +11,6 @@ export const headerItalic = playfairItalic.className;
 export const headerNormal = playfair.className;
 
 export default function App({ Component, pageProps }: AppProps) {
-  // return <Component {...pageProps} />
   return (
     <main className={inter.className}>
       <Component {...pageProps} />

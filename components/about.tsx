@@ -20,7 +20,7 @@ const About = () => (
                 </div>
                 <div className='col-lg'>
                     <div className={styles.imageContainer}>
-                        <Image className={styles.image} src="/photos/pexels-canva-studio-3153198.jpg" alt="About image" fill={true} />
+                        <Image className={styles.image} src="/images/photos/pexels-canva-studio-3153198.jpg" alt="About image" fill={true} />
                     </div>
                 </div>
             </div>
