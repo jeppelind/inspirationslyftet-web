@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 // html,
 // body {
 //   padding: 0;
@@ -16,6 +18,16 @@
 
 h1 {
   font-weight: 900;
+}
+
+a {
+  color: $main;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: $main;
+  text-decoration: underline;
 }
 
 .subheader {
