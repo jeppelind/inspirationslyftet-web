@@ -19,7 +19,10 @@ console.log(postsDir);
 export const getPostDataById = async (id: string) => {
     const fullPath = path.join(postsDir, `${id}.md`);
     const content = readFileSync(fullPath, 'utf8');
-    const parsed = matter(content);
+    console.log('111111')
+    console.log(fullPath)
+    //const parsed = matter(content);
+    console.log('222222')
 
     // const processedContent = await remark()
     //     .use(html)
