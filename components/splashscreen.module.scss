@@ -16,7 +16,13 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    color: $main;
+    color: black;
+    background-color: rgba($main, 0.2);
     text-transform: uppercase;
-    font-style: normal;
+}
+
+.headerBackground {
+    background-color: white;
+    mix-blend-mode: screen;
+    padding: 6px 18px;
 }

@@ -1,0 +1,31 @@
+@import '../styles/colors.scss';
+
+.parent {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.postLink {
+    text-decoration: none;
+}
+
+.post {
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+    height: 100%;
+    color: $text;
+    background: linear-gradient($main, $main) 0 100%/100% 4px no-repeat;
+    transition: .2s ease-out;
+}
+
+.post:hover, .post:hover p,
+.post:focus,
+.post:active {
+    color: $background;
+    background-size: 100% 100%;
+}
+
+.readMore {
+    text-align: right;
+    color: $background;
+}

@@ -1,0 +1,5 @@
+@import './colors.scss';
+
+.textLight {
+    color: tint-color($text, 50);
+}

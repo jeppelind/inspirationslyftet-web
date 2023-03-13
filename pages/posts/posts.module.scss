@@ -1,0 +1,26 @@
+@import '../../styles/colors.scss';
+
+.headerParent {
+    background-color: $main;
+    padding: 100px 0;
+}
+
+.headerBackground {
+    background-color: $white;
+    line-height: normal;
+    mix-blend-mode: screen;
+    padding: 6px 18px;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
