@@ -24,18 +24,17 @@ export const getPostDataById = async (id: string) => {
     const parsed = matter(content);
     console.log('222222')
 
-    // const processedContent = await remark()
-    //     .use(html)
-    //     .process(parsed.content);
-    // const contentHtml = processedContent.toString();
+    const processedContent = await remark()
+        .use(html)
+        .process(parsed.content);
+    const contentHtml = processedContent.toString();
 
-    const contentHtml = '';
-
+    console.log('333333')
     return {
         id,
         title: 'Missing title',
         contentHtml,
-        // ...parsed.data,
+        ...parsed.data,
     };
 
     // return {
