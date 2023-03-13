@@ -21,7 +21,7 @@ export const getPostDataById = async (id: string) => {
     const content = readFileSync(fullPath, 'utf8');
     console.log('111111')
     console.log(fullPath)
-    //const parsed = matter(content);
+    const parsed = matter(content);
     console.log('222222')
 
     // const processedContent = await remark()
