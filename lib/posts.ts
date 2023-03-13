@@ -13,22 +13,34 @@ export type PostProps = {
 
 const postsDir = path.join(process.cwd(), 'posts');
 
-export const getPostDataById = async (id: string) => {
-    const fullPath = path.join(postsDir, `${id}.md`);
-    const content = readFileSync(fullPath, 'utf8');
-    const parsed = matter(content);
+console.log('POST DIR:');
+console.log(postsDir);
 
-    const processedContent = await remark()
-        .use(html)
-        .process(parsed.content);
-    const contentHtml = processedContent.toString();
+export const getPostDataById = async (id: string) => {
+    // const fullPath = path.join(postsDir, `${id}.md`);
+    // const content = readFileSync(fullPath, 'utf8');
+    // const parsed = matter(content);
+
+    // const processedContent = await remark()
+    //     .use(html)
+    //     .process(parsed.content);
+    // const contentHtml = processedContent.toString();
+
+    const contentHtml = '';
 
     return {
         id,
         title: 'Missing title',
         contentHtml,
-        ...parsed.data,
+        // ...parsed.data,
     };
+
+    // return {
+    //     id,
+    //     title: 'Missing title',
+    //     contentHtml,
+    //     ...parsed.data,
+    // };
 }
 
 export const getSortedPostsData = async () => {
