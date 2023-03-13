@@ -32,7 +32,7 @@ export const getPostDataById = async (id: string) => {
         id,
         title: 'Missing title',
         contentHtml,
-        ...parsed.data,
+        // ...parsed.data,
     };
 
     // return {
