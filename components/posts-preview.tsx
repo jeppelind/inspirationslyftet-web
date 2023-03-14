@@ -12,7 +12,7 @@ type PreviewProps = {
   
   
 const Preview = ({ id, title, date }: PreviewProps) => (
-  <div className={`col-lg-4 ${styles.column}`}>
+  <div className={`col-lg-4`}>
     <Link href={`/posts/${id}`} className={styles.postLink}>
       <div className={styles.post}>
         <p className={utilStyles.textLight}>{date}</p>

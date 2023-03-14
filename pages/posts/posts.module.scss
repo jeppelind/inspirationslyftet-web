@@ -1,7 +1,7 @@
 @import '../../styles/colors.scss';
 
 .headerParent {
-    background-color: $main;
+    background-color: tint-color($main, 14);
     padding: 100px 0;
 }
 

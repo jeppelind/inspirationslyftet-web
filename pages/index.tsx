@@ -4,6 +4,7 @@ import About from '../components/about';
 import Cards from '../components/cards';
 import { getSortedPostsData, PostProps } from '../lib/posts';
 import PostsPreview from '../components/posts-preview';
+import InfoHalf from '../components/info-half';
 
 export type StaticProps = {
   blogPosts: PostProps[]
@@ -23,8 +24,9 @@ export default function Home({ blogPosts }: StaticProps) {
     <Layout>
       <Splashscreen />
       <About />
-      <PostsPreview blogPosts={blogPosts} />
       <Cards />
+      <PostsPreview blogPosts={blogPosts} />
+      <InfoHalf />
     </Layout>
   )
 }

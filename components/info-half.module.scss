@@ -1,0 +1,31 @@
+@import '../styles/colors.scss';
+
+.main {
+    background-color: tint-color($main, 14);
+}
+
+.imageContainer {
+    overflow: hidden;
+    position: relative;
+    min-height: 40rem;
+    min-width: 50%;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    color: $background;
+    padding: 10% 8%;
+}
+
+@media (max-width: 768px) {
+    .imageContainer{
+        min-height: 14rem;
+    }
+}
