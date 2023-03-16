@@ -2,7 +2,7 @@ import styles from './layout.module.scss';
 import Footer from './footer';
 import { ReactNode } from 'react';
 import Head from 'next/head';
-import Navbar from './navbar';
+import Navigation from './navbar';
 
 const Layout = (props: { children: ReactNode }) => (
     <div className={styles.mainParent}>
@@ -11,7 +11,7 @@ const Layout = (props: { children: ReactNode }) => (
             <meta name="description" content="Inspirationslyftet hemsida" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar />
+        <Navigation />
         <main>{props.children}</main>
         <Footer />
     </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Container, Row, Col } from "react-bootstrap";
 import styles from './about.module.scss';
 import { headerItalic } from '../pages/_app';
 
@@ -7,25 +8,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 `;
 
 const About = () => (
-    <section className={`container-fluid ${styles.main}`}>
-        <div className={`container-md ${styles.parent}`}>
-            <div className='row'>
-                <div className={`col-lg`}>
+    <Container fluid className={styles.main}>
+        <Container className={styles.parent}>
+            <Row>
+                <Col lg={6}>
                     <div className={styles.textBox}>
                         <h1 className={headerItalic}>Lorem ipsum</h1>
                         <br />
                         <h6 className='subheader'>Lorem ipsum dolor sit</h6>
                         <p>{textContent}</p>
                     </div>
-                </div>
-                <div className='col-lg'>
+                </Col>
+                <Col lg={6}>
                     <div className={styles.imageContainer}>
                         <Image className={styles.image} src="/images/photos/pexels-canva-studio-3153198.jpg" alt="About image" fill={true} />
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </Col>
+            </Row>
+        </Container>
+    </Container>
 );
 
 export default About;

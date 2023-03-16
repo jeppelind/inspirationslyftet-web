@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Container, Row, Col } from "react-bootstrap";
 import styles from './info-half.module.scss';
 import { headerItalic } from '../pages/_app';
 
@@ -7,18 +8,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 `;
 
 const InfoHalf = () => (
-    <section className={`container-fluid ${styles.main}`}>
-        <div className='row'>
-            <div className={`col-lg ${styles.imageContainer}`}>
+    <Container fluid className={styles.main}>
+        <Row>
+            <Col lg={6} className={styles.imageContainer}>
                 <Image className={styles.image} src="/images/photos/pexels-luizclas-1848565.jpg" alt="Info image" fill={true} />
-            </div>
-            <div className={`col-lg ${styles.textBox}`}>
+            </Col>
+            <Col lg={6} className={styles.textBox}>
                 <h2 className={headerItalic}>Lorem ipsum</h2>
                 <br />
                 <p>{textContent}</p>
-            </div>
-        </div>
-    </section>
+            </Col>
+        </Row>
+    </Container>
 );
 
 export default InfoHalf;

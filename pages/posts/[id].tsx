@@ -4,6 +4,7 @@ import { getAllPostIds, getPostDataById, PostProps } from "../../lib/posts";
 import { headerItalic } from "../_app";
 import styles from './posts.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
+import { Container, Row, Col } from "react-bootstrap";
 
 type ParamsStaticProps = {
     params: {
@@ -39,20 +40,22 @@ const Post = ({ postData }: StaticProps) => (
         </Head>
         <section>
             <div className={styles.headerParent}>
-                <div className='container-md'>
+                <Container>
                     <h1 className={headerItalic}><span className={styles.headerBackground}>{postData.title}</span></h1>
-                </div>
+                </Container>
             </div>
-            <div className={`container-md ${styles.content}`}>
-                <div className='row'>
-                    <div className='col-md'>bild</div>
-                    <div className='col-md'>
+            <Container className={styles.content}>
+                <Row>
+                    <Col md={6}>
+                        bild
+                    </Col>
+                    <Col md={6}>
                         <h6 className={utilStyles.textLight}>{postData.date}</h6>
                         <br />
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     </Layout>
 );

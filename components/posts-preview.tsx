@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Container, Row, Col } from "react-bootstrap";
 import { StaticProps } from '../pages';
 import { headerItalic } from '../pages/_app';
 import styles from './posts-preview.module.scss';
@@ -12,7 +13,7 @@ type PreviewProps = {
   
   
 const Preview = ({ id, title, date }: PreviewProps) => (
-  <div className={`col-lg-4`}>
+  <Col lg={4}>
     <Link href={`/posts/${id}`} className={styles.postLink}>
       <div className={styles.post}>
         <p className={utilStyles.textLight}>{date}</p>
@@ -20,18 +21,18 @@ const Preview = ({ id, title, date }: PreviewProps) => (
         <p className={styles.readMore}><small>LÄS MER</small></p>
       </div>
     </Link>
-  </div>
+  </Col>
 );
 
 const PostsPreview = ({ blogPosts }: StaticProps) => (
-  <section className={`container-md ${styles.parent}`}>
-    <h1 className={headerItalic}>Nyheter</h1>
-    <div className='row'>
+  <Container className={styles.parent}>
+    <h1 className={headerItalic}>Blogg</h1>
+    <Row>
       {
         blogPosts.map((post) => <Preview key={post.id} id={post.id} title={post.title} date={post.date} />)
       }
-    </div>
-  </section>
+    </Row>
+  </Container>
 );
 
 export default PostsPreview;

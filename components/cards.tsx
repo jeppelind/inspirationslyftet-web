@@ -1,3 +1,4 @@
+import { Container, Row, Col } from "react-bootstrap";
 import styles from './cards.module.scss';
 
 type CardProps = {
@@ -21,22 +22,22 @@ const cardInfo = [
 ]
 
 const Card = ({ label, text }: CardProps) => (
-    <div className={`col-lg ${styles.column}`}>
+    <Col lg={4} className={styles.column}>
         <div className={styles.card}>
             <h6 className='subheader'>{label}</h6>
             <p>{text}</p>
         </div>
-    </div>
+    </Col>
 )
 
 const Cards = () => (
-    <section className={`container-md ${styles.parent}`}>
-        <div className='row'>
+    <Container className={styles.parent}>
+        <Row>
             {
                 cardInfo.map((card, idx) => <Card key={idx} label={card.label} text={card.text} />)
             }
-        </div>
-    </section>
+        </Row>
+    </Container>
 );
 
 export default Cards;
