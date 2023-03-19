@@ -2,10 +2,29 @@
 
 .navbar {
     background-color: $white;
-    min-height: 100px;
     filter: drop-shadow(0 0 2px rgba(176, 176, 176, 0.4));
+}
+
+.container {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .navbarOptions {
     justify-content: flex-end;
+    font-weight: 600;
+}
+
+.option:hover {
+    color: $complementary;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbarOptions {
+        font-size: 2.2rem;
+    }
+    .nav-link {
+        padding: 1rem;
+    }
 }

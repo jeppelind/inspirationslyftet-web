@@ -8,7 +8,7 @@ export default function Custom404() {
     <Layout>
     <>
         <section className={styles.content}>
-            <h1 className={headerItalic}>404 | Sidan kunde inte hittas</h1>
+            <h1 className={headerItalic}>Sidan kunde inte hittas</h1>
             <Link href='/'>Tillbaka till startsidan</Link>
         </section>
     </>

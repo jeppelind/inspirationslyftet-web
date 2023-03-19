@@ -36,7 +36,7 @@ export const getStaticPaths = async () => {
 const Post = ({ postData }: StaticProps) => (
     <Layout>
         <Head>
-            <title>{postData.title} | Inspirationslyftet</title>
+            <title>{`${postData.title} | Inspirationslyftet`}</title>
         </Head>
         <section>
             <div className={styles.headerParent}>
@@ -46,13 +46,13 @@ const Post = ({ postData }: StaticProps) => (
             </div>
             <Container className={styles.content}>
                 <Row>
-                    <Col md={6}>
-                        bild
-                    </Col>
-                    <Col md={6}>
+                    <Col md={7}>
                         <h6 className={utilStyles.textLight}>{postData.date}</h6>
                         <br />
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                    </Col>
+                    <Col md={5}>
+                        bild
                     </Col>
                 </Row>
             </Container>
